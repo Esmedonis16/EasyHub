@@ -1,0 +1,10 @@
+.env
+.env.*
+*.ino
+*.py
+*.cpp
+*.h
+*.tar
+*.zip
+*.rar
+__pycache__/
