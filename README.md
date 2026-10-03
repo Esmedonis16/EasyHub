@@ -23,6 +23,9 @@ La documentación original también contempla un dispositivo secundario para con
 | Reconocimiento facial | Integración de un servidor Flask con las API de registro e identificación de DeepStack |
 | Control desde el teléfono | Menús de Telegram para interacción y control del dispositivo |
 | Ayuda al usuario | Bot Python con tutoriales, menús, verificación de administrador y cierre por inactividad |
+| Diseño electrónico | Diseño documentado en Proteus de etapas de control y potencia, con referencias a optoacopladores, TRIAC, transistores y sensor de efecto Hall |
+| Construcción física | Integración de un ESP32-WROOM y componentes electrónicos en una placa prototipo |
+| Propuesta de producto | Documentación de arquitectura modular, propuesta de valor, análisis estratégico y estimaciones económicas |
 | Versiones del firmware | Variantes con selección de señas, duración temporal del acceso y solicitudes de gestión de usuarios y estadísticas |
 | Nube | Uso académico reportado de Docker y DigitalOcean para un despliegue temporal |
 
@@ -47,7 +50,8 @@ El dispositivo captura una imagen y solicita su procesamiento al servidor. El se
 
 | Capa | Tecnologías |
 |---|---|
-| Hardware | ESP32-CAM AI Thinker |
+| Hardware | ESP32-CAM AI Thinker y ESP32-WROOM en la placa documentada |
+| Diseño electrónico | Proteus, optoacopladores, TRIAC y sensor de efecto Hall |
 | Firmware | Arduino / C++ |
 | Red y configuración | WiFi, WiFiClientSecure, Preferences, WiFiManager |
 | Mensajería | Telegram, UniversalTelegramBot, python-telegram-bot |
@@ -57,7 +61,45 @@ El dispositivo captura una imagen y solicita su procesamiento al servidor. El se
 
 ## Evidencias del proyecto
 
-Las imágenes siguientes son material tutorial. Documentan el diseño y la guía de uso.
+Las evidencias reúnen documentación académica, una fotografía de construcción física, un presupuesto previsto y material tutorial original.
+
+### Fase 1: propuesta y arquitectura de EasyHub
+
+El informe de **Electrónica Aplicada 2**, fechado el **12 de agosto de 2024**, presenta EasyHub como un sistema de automatización Wi-Fi con ESP32 compatible con Telegram. Describe una arquitectura de módulos maestro y esclavo, alternativas de módulo único, control de actuadores, sensor de efecto Hall y etapas de potencia. También desarrolla la propuesta de valor y una comparación conceptual con otras soluciones.
+
+[Consultar el informe de Fase 1 de EasyHub](FASE_1___Electr%C3%B3nica_aplicada_2.pdf)
+
+Este es el documento de EasyHub incorporado al repositorio por el autor. Se conserva con sus créditos originales; las características propuestas en esa fase se distinguen de las evidencias de implementación posteriores.
+
+### Diseño electrónico del prototipo
+
+Los archivos locales de Proteus `ROOT_1.12.pdsprj` y `ESP32_12VAC_LOCK.pdsprj` documentan el diseño del circuito. En el esquema de ROOT se identificaron referencias a **MOC3021**, **TRIAC**, **2N2222**, señales del sensor **A3144**, GPIO del ESP32 y conexiones de una cerradura de **12 VAC**.
+
+Estos hallazgos aportan evidencia del trabajo de diseño electrónico. Los proyectos editables de Proteus se mantienen fuera de esta publicación; no se ha validado nuevamente su simulación ni su correspondencia completa con el montaje fotografiado.
+
+### Integración de componentes en la placa
+
+La fotografía original muestra una placa ensamblada con un **ESP32-WROOM**, un transformador, componentes de control y conectores. Complementa la documentación del diseño con evidencia física del montaje. Esta placa se diferencia del dispositivo ESP32-CAM mencionado en la integración facial.
+
+![Integración de ESP32-WROOM y componentes electrónicos en la placa prototipo](evidencias/placa-ensamblada.jpg)
+
+La imagen documenta el ensamblaje; no constituye por sí sola una prueba de funcionamiento o una certificación del circuito.
+
+### Planificación de componentes y presupuesto
+
+Se elaboró un presupuesto previsto con cantidades, precios unitarios y costos de componentes, alimentación, PCB y caja contenedora. La tabla original declara un monto total de **Q495.50**.
+
+![Presupuesto histórico previsto para componentes del prototipo](evidencias/presupuesto-previsto.png)
+
+Se conserva como estimación académica histórica, no como costo final comprobado ni cotización actual. Tampoco se presupone que corresponda al costo de todos los módulos de EasyHub.
+
+### Fase 2: propuesta de producto y análisis económico
+
+La presentación de Fase 2 desarrolla el perfil del cliente, las matrices FODA y CAME, el modelo Canvas, las fuerzas de Porter, alternativas de kits y escenarios de punto de equilibrio.
+
+[Consultar la presentación de Fase 2](evidencias/presentacion-fase-2.pdf)
+
+Sus cifras y argumentos se presentan como parte del ejercicio académico de planificación comercial; no acreditan ventas realizadas, rentabilidad efectiva o validación de mercado.
 
 ### Instalación y concepto de dispositivos
 
@@ -88,11 +130,13 @@ Se conservaron cuatro variantes del firmware, un servidor Flask de reconocimient
 ## Competencias aplicadas
 
 - Programación de microcontroladores y gestión de periféricos.
+- Diseño electrónico e integración de componentes en una placa prototipo.
 - Integración de dispositivos físicos con servicios HTTP.
 - Desarrollo de bots e interfaces de mensajería.
 - Integración de servicios de reconocimiento facial.
 - Configuración de servicios y despliegue académico en la nube.
 - Elaboración de tutoriales para instalación y uso.
+- Planificación de componentes, presupuesto y propuesta de valor del producto.
 
 La descripción corresponde al trabajo del proyecto. La distribución exacta de tareas entre integrantes no se documenta aquí y no debe interpretarse como autoría individual exclusiva.
 
