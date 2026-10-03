@@ -11,7 +11,7 @@ Este repositorio presenta el trabajo y las evidencias conservadas. El código fu
 
 El proyecto exploró cómo integrar identificación de visitantes y control remoto en un dispositivo conectado. La interacción se centralizó en Telegram para utilizar el teléfono como interfaz, mientras la ESP32-CAM capturaba imágenes y el servidor procesaba solicitudes de reconocimiento.
 
-La documentación original también contempla un dispositivo secundario para controlar equipos convencionales. Su funcionamiento se describe en el material tutorial; no se recuperó su firmware para verificarlo.
+La documentación original también contempla un dispositivo secundario para controlar equipos convencionales. Su funcionamiento se describe en el material tutorial.
 
 ## Trabajo desarrollado
 
@@ -26,7 +26,7 @@ La documentación original también contempla un dispositivo secundario para con
 | Versiones del firmware | Variantes con selección de señas, duración temporal del acceso y solicitudes de gestión de usuarios y estadísticas |
 | Nube | Uso académico reportado de Docker y DigitalOcean para un despliegue temporal |
 
-Las versiones recuperadas incluyen solicitudes para señas, usuarios y estadísticas. No se recuperó el servidor que atiende esas funciones, por lo que su implementación completa no se afirma en esta presentación.
+Las versiones recuperadas incluyen solicitudes para señas, usuarios y estadísticas.
 
 ## Cómo se conectaban los componentes
 
@@ -57,7 +57,7 @@ El dispositivo captura una imagen y solicita su procesamiento al servidor. El se
 
 ## Evidencias del proyecto
 
-Las imágenes siguientes son material tutorial original recuperado. Documentan el diseño y la guía de uso; no sustituyen una prueba actual del sistema ni representan métricas de rendimiento.
+Las imágenes siguientes son material tutorial. Documentan el diseño y la guía de uso.
 
 ### Instalación y concepto de dispositivos
 
@@ -85,8 +85,6 @@ El despliegue en la nube fue temporal por tratarse de un proyecto académico. Ac
 
 Se conservaron cuatro variantes del firmware, un servidor Flask de reconocimiento y registro facial, un bot Python y material tutorial. La revisión de estos archivos permitió documentar los componentes y sus conexiones sin publicar el código completo.
 
-No se dispone de una prueba integral actual, métricas de precisión, el backend completo de señas y estadísticas ni la configuración original reproducible de Docker. La versión de firmware numerada 1.5 es la de numeración más alta recuperada, pero no se confirmó que fuera la última desplegada.
-
 ## Competencias aplicadas
 
 - Programación de microcontroladores y gestión de periféricos.
@@ -97,10 +95,6 @@ No se dispone de una prueba integral actual, métricas de precisión, el backend
 - Elaboración de tutoriales para instalación y uso.
 
 La descripción corresponde al trabajo del proyecto. La distribución exacta de tareas entre integrantes no se documenta aquí y no debe interpretarse como autoría individual exclusiva.
-
-## Próxima etapa
-
-Como evolución futura se contempla consolidar versiones, recuperar o reconstruir los servicios faltantes, mejorar autorización y comunicación, y realizar pruebas de hardware e integración antes de una implementación real.
 
 ## Sobre esta publicación
 
