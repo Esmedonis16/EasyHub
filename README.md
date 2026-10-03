@@ -75,7 +75,7 @@ Este es el documento de EasyHub incorporado al repositorio por el autor. Se cons
 
 Los archivos locales de Proteus `ROOT_1.12.pdsprj` y `ESP32_12VAC_LOCK.pdsprj` documentan el diseño del circuito. En el esquema de ROOT se identificaron referencias a **MOC3021**, **TRIAC**, **2N2222**, señales del sensor **A3144**, GPIO del ESP32 y conexiones de una cerradura de **12 VAC**.
 
-Estos hallazgos aportan evidencia del trabajo de diseño electrónico. Los proyectos editables de Proteus se mantienen fuera de esta publicación; no se ha validado nuevamente su simulación ni su correspondencia completa con el montaje fotografiado.
+Estos hallazgos aportan evidencia del trabajo de diseño electrónico. Los proyectos editables de Proteus se mantienen fuera de esta publicación.
 
 ### Integración de componentes en la placa
 
@@ -83,7 +83,7 @@ La fotografía original muestra una placa ensamblada con un **ESP32-WROOM**, un 
 
 ![Integración de ESP32-WROOM y componentes electrónicos en la placa prototipo](evidencias/placa-ensamblada.jpg)
 
-La imagen documenta el ensamblaje; no constituye por sí sola una prueba de funcionamiento o una certificación del circuito.
+La imagen documenta el ensamblaje.
 
 ### Planificación de componentes y presupuesto
 
